@@ -1,0 +1,50 @@
+{
+    "name": "nativescript-anyline",
+    "version": "1.0.0",
+    "description": "anyline",
+    "main": "anyline",
+    "typings": "index.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "2.0.0",
+            "ios": "2.0.0"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NathanaelA/nativescript-anyline.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "anyline",
+        "scanning",
+        "nativescript",
+	  "meter",
+	  "barcode",
+	  "serial",
+	  "water",
+	  "gas"
+    ],
+    "author": {
+        "name": "Nathanael Anderson",
+        "email": "nathan@master-technology.com"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/NathanaelA/nativescript-anyline/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/NathanaelA/nativescript-anyline/issues"
+    },
+    "homepage": "https://github.com/NathanaelA/nativescript-anyline",
+    "readmeFilename": "README.md",
+    "scripts": {
+        "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+        "demo.android": "npm run preparedemo && cd demo && tns run android",
+        "debug.ios": "npm run preparedemo && cd demo && tns debug ios --emulator",
+        "debug.android": "npm run preparedemo && cd demo && tns debug android --emulator",
+        "preparedemo": "cd demo && tns plugin remove nativescript-anyline && tns plugin add ../src && tns install",
+        "setup": "cd demo && npm install && tns plugin add ../src && cd ..",
+        "start": "npm run demo.android"
+    }
+}

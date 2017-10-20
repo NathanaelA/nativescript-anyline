@@ -1,0 +1,17 @@
+android {
+    productFlavors {
+        "nativescriptanyline" {
+            dimension "nativescriptanyline"
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://anylinesdk.blob.core.windows.net/maven/' }
+    }
+}
+
+dependencies {
+    compile 'io.anyline:anylinesdk:3.16.0@aar'	
+}

@@ -1,0 +1,1 @@
+OTHER_LDFLAGS = $(inherited) -framework Accelerate -framework AssetsLibrary -framework AudioToolbox -framework AVFoundation -framework CoreMotion -framework CoreMedia -lz -lc++ -all_load
